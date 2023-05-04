@@ -21,7 +21,7 @@ function Main() {
         <div className="row">
           {data.map((element)=>{
             const{name ,type,language,genres,summary,image,premiered,rating }=element.show;
-            return <div className="col-md-4" key={element.show.id}>
+            return <div className="col-sm-6 col-lg-4 col-xl-3" key={element.show.id}>
               <Moviecard name={name} type={type} language={language} genres={genres} summary={summary} image={image?.original} premiered={premiered} rating={rating?.average}/>
             </div>
           })}
